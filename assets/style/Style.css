@@ -28,6 +28,7 @@ header{
     z-index: 40;
     padding-left: 70%;
     padding-top: 10px;
+    background-color: rgba(255, 234, 0, 0.63);
 }
 .nav--li{
     display: inline-block;
@@ -109,12 +110,13 @@ h2{
     margin-right: 10px;
     border: 1px solid transparent;
     border-radius: 20px;
-    cursor: pointer;
     background-color: var(--main-botton);
     color: white;
     font-size: medium;
 }
-.search--botton:hover{
-        box-shadow:  2px 2px 10px 0 rgb(208, 208, 208);
-        border: 2px solid var(--text-color);
+#app{
+    justify-content: center;
+    margin-inline: 50px;
+    border: 1px solid transparent;
+    box-shadow:  2px 2px 10px 0 rgb(208, 208, 208);
 }
