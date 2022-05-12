@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my project">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON Test</title>
+    <link href="../assets/style/Style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <ul class="nav-bar">
+                <li class="nav--li"><a href="#">Home</a></li>
+                <li class="nav--li"><a href="#">About</a></li>
+                <li class="nav--li"><a href="#">Services</a></li>
+                <li class="nav--li"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="landing">
+            <h1>Welcome To Our Site</h1>
+            <p class="landing-p">Thanks to be here!</p>
+        </div>
+    </header>
+    <main>
+        <h2>Search here.....</h2>
+        <div class="main--search">
+            <botton class="search--botton">search</botton>
+            <input type="text" placeholder="User Name ..." class="window_User_search" style="font-size:50px" onkeyup="searchUser()">
+        </div>
+       <div class="main--search">
+            <botton class="search--botton">search</botton>
+            <input type="text" placeholder="Company Name ..." class="window_Company_search"  style="font-size:50px" onkeyup="searchCompany()">
+       </div> 
+       <div class="main--search">
+            <botton class="search--botton">search</botton>
+            <input type="text" placeholder="Book Name ..." class="window_Book_search"  style="font-size:50px" onkeyup="searchBook()">
+      </div> 
+        <div id="app" class="App" href="css_styles.css">
+            <div id="users">
+                <h2> Users </h2>
+                <div id="users_menu" style="overflow-x: auto; white-space:nowrap; border-style: solid;">
+            </div>
+        </div>
+        <div id="companies">
+            <h2> Companies </h2>
+            <div id="companies_menu" style="overflow-x: auto; white-space:nowrap; border-style: solid;">
+        </div>
+        <div id="books">
+            <h2> Books </h2>
+            <div id="books_menu" style="overflow-x: auto; white-space:nowrap; border-style: solid;">    
+        </div>
+    </main>        
+</body>
+<!-- <script src="..\assets\script\loaderapi.js"></script> -->
+<script src="..\assets\script\loaderapionline.js"></script>
+</html>
