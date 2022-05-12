@@ -30,18 +30,18 @@ function appendUsers(users) {
     let users_menu = document.getElementById("users_menu");
     users_menu.innerHTML ='';
     for (var i = 0; i < users.length; i++) {
-        var span = document.createElement("span");
-        span.style.cssText = "display:inline-block;margin:10px;";
+        var div = document.createElement("div");
+        div.style.cssText = "margin:25px;";
         var name_div = document.createElement("div");
         name_div.innerHTML = "Name: " + users[i].firstname + " " + users[i].lastname;
-        span.appendChild(name_div);
+        div.appendChild(name_div);
         var email_div = document.createElement("div");
         email_div.innerHTML = "Email: " + users[i].email;
-        span.appendChild(email_div);
+        div.appendChild(email_div);
         var id_div = document.createElement("div");
         id_div.innerHTML = "ID: " + users[i].id;
-        span.appendChild(id_div);
-        users_menu.appendChild(span);
+        div.appendChild(id_div);
+        users_menu.appendChild(div);
     }
 }
 
@@ -74,21 +74,21 @@ function appendCompanies(companies) {
     let companies_menu = document.getElementById("companies_menu");
     companies_menu.innerHTML ='';
     for (var i = 0; i < companies.length; i++) {
-        var span = document.createElement("span");
-        span.style.cssText = "display:inline-block;margin:10px;";
+        var div = document.createElement("div");
+        div.style.cssText = "margin:25px;";
         var name_div = document.createElement("div");
         name_div.innerHTML = "Name: " + companies[i].name;
-        span.appendChild(name_div);
+        div.appendChild(name_div);
         var email_div = document.createElement("div");
         email_div.innerHTML = "Email: " + companies[i].email;
-        span.appendChild(email_div);
+        div.appendChild(email_div);
         var city_div = document.createElement("div");
         city_div.innerHTML = "City: " + companies[i].country;
-        span.appendChild(city_div);
+        div.appendChild(city_div);
         var id_div = document.createElement("div");
         id_div.innerHTML = "ID: " + companies[i].id;
-        span.appendChild(id_div);
-        companies_menu.appendChild(span);
+        div.appendChild(id_div);
+        companies_menu.appendChild(div);
     }
 }
 
@@ -119,15 +119,15 @@ function appendBooks(books) {
     let books_menu = document.getElementById("books_menu");
     books_menu.innerHTML ='';
     for (var i = 0; i < books.length; i++) {
-        var span = document.createElement("span");
-        span.style.cssText = "display:inline-block;margin:10px;";
+        var div = document.createElement("div");
+        div.style.cssText = "margin:25px;";
         var name_div = document.createElement("div");
         name_div.innerHTML = "Title: " + books[i].title;
-        span.appendChild(name_div);
+        div.appendChild(name_div);
         var id_div = document.createElement("div");
         id_div.innerHTML = "ID: " + books[i].id;
-        span.appendChild(id_div);
-        books_menu.appendChild(span);
+        div.appendChild(id_div);
+        books_menu.appendChild(div);
     }
 }
 
