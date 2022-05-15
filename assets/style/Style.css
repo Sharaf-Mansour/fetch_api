@@ -2,8 +2,7 @@
 :root {
     --header-text-color:rgb(226, 43, 214);
     --out-lines: rgb(255, 119, 0);
-    --main-botton: rgb(255, 55, 0);
-}
+ }
 *{
     margin: 0;
     padding: 0;
@@ -55,20 +54,28 @@ h1{
     font-size: xx-large;
     line-height: 3em;
 }
+h2,h3,h4{
+      line-height: 1.5em;
+     color: dimgray !important;
+
+}
+
 .landing-p{
     color: var(--header-text-color);
     font-size: x-large;
-}
-main{
-    padding-top: 100px ;
-}
-h2{
+} 
+label{
     color: rgb(255, 55, 0);
-    padding: 30px;
+    padding: 20px;
+    margin: 20px;
+    font-size: xxx-large;
+}
+.container{
+    overflow-x: auto; white-space:nowrap; border-style: solid;
+ 
 }
 .main--search{
-    padding-top: 50px;
-    display: flex;
+     display: inline;
     align-items: center;
     justify-content: center;
 }
@@ -105,18 +112,102 @@ h2{
 .window_Book_search:hover {
     border: 2px solid var(--out-lines) ;
 }
-.search--botton{
-    padding: 20px ;
-    margin-right: 10px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    background-color: var(--main-botton);
-    color: white;
-    font-size: medium;
-}
+ 
 #app{
     justify-content: center;
     margin-inline: 50px;
     border: 1px solid transparent;
     box-shadow:  2px 2px 10px 0 rgb(208, 208, 208);
 }
+
+
+/* user card */
+
+.infocardContainer * {
+ 
+  }
+  h2 {
+    font-weight: 600; font-style: italic; font-family: "Fira Sans Condensed", sans-serif;
+  }
+  
+ 
+  .infocardContainer {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: rgb(0,159,255);
+    background: linear-gradient(121deg, rgba(255,255,255,0) 13%, rgba(0,159,255,1) 100%);
+    transition: all 500ms ease-in;
+    transition-delay: 1s;
+ margin: 20px;
+  }
+  .infocardContainer:hover {
+    width: 572px;
+    border-radius: 100px 10px 100px 100px;
+    transition: all 1s ease-out;
+  }
+  
+  .infocardContainer div {
+    color: white;
+    flex-shrink: 1;
+    width: 100%;
+    --background-color: green;
+  }
+  .infocardContainer div * {
+    display: flex;
+    --flex: inherit;
+    overflow: hidden;
+    text-overflow: hidden;
+    --background-color: yellow;
+    color: white;
+    white-space: nowrap;
+    width: 0;
+    height: auto;
+    transition: all 450ms ease-in;
+    transition-delay: 1s;
+  }
+  .infocardContainer:hover div *{
+    --background-color: purple;
+    display: flex;
+    visibility: visible;
+    transition: all 1s ease-out;
+    transition-delay: 500ms;
+    width: 100%;
+    height: auto;
+  }
+  
+  .infocardContainer .main, .infocardContainer .main img{
+    --background-color: red;
+    height: 200px;
+    width: 200px;
+    padding-right: 10px;
+    border-radius: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .infocardContainer .main img{
+    height: 180px;
+    width: 180px;
+    transition: none;
+    display: float;
+    position: relative;
+    border: 10px solid white;
+    margin: 0 0 0 0; padding: 0 0 0 0;
+  }
+  .infocardContainer .textbois {
+    position: relative;
+  }
+  .infocardContainer .textbois a{
+    max-width: 60%;
+    max-height: 30px;
+    
+    --background-color: white;
+    position:absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13px;
+  }
+ 
+ 

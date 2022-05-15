@@ -30,17 +30,44 @@ function appendUsers(users) {
     let users_menu = document.getElementById("users_menu");
     users_menu.innerHTML ='';
     for (var i = 0; i < users.length; i++) {
+        
         var div = document.createElement("div");
-        div.style.cssText = "margin:25px;";
-        var name_div = document.createElement("div");
-        name_div.innerHTML = "Name: " + users[i].firstname + " " + users[i].lastname;
-        div.appendChild(name_div);
-        var email_div = document.createElement("div");
-        email_div.innerHTML = "Email: " + users[i].email;
-        div.appendChild(email_div);
-        var id_div = document.createElement("div");
+        div.classList.add("infocardContainer");
+        var img_div = document.createElement("div");
+        img_div.classList.add("main");
+        var img = document.createElement("img");
+        img.src = users[i].image+i;
+        img_div.appendChild(img);
+        div.appendChild(img_div); 
+        var textbois_div = document.createElement("div");
+        textbois_div.classList.add("textbois");
+        var id_div = document.createElement("h2");
         id_div.innerHTML = "ID: " + users[i].id;
-        div.appendChild(id_div);
+        textbois_div.appendChild(id_div);      
+
+        var firstname_div = document.createElement("h2");
+        firstname_div.innerHTML = "firstname: " + users[i].firstname;
+        textbois_div.appendChild(firstname_div);
+
+        var lastname_div = document.createElement("h2");
+        lastname_div.innerHTML =   "lastname: " + users[i].lastname;
+        textbois_div.appendChild(lastname_div);      
+
+        var username_div = document.createElement("h3");
+        username_div.innerHTML = "username: " + users[i].username;
+        textbois_div.appendChild(username_div);      
+
+        var website_div = document.createElement("h4");
+        website_div.innerHTML =  users[i].website;
+        website_div.href = users[i].website;
+        textbois_div.appendChild(website_div);      
+        
+        var email_div = document.createElement("h4");
+        email_div.href = "mailto:" + users[i].email;
+        email_div.innerHTML =  users[i].email;
+        textbois_div.appendChild(email_div);
+
+        div.appendChild(textbois_div);
         users_menu.appendChild(div);
     }
 }

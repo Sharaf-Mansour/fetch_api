@@ -26,35 +26,50 @@
         </div>
     </header>
     <main>
-        <h2>Search here.....</h2>
-        <div class="main--search">
-            <botton class="search--botton">search</botton>
-            <input type="text" placeholder="User Name ..." class="window_User_search" style="font-size:50px" onkeyup="searchUser()">
-        </div>
-       <div class="main--search">
-            <botton class="search--botton">search</botton>
-            <input type="text" placeholder="Company Name ..." class="window_Company_search"  style="font-size:50px" onkeyup="searchCompany()">
-       </div> 
-       <div class="main--search">
-            <botton class="search--botton">search</botton>
-            <input type="text" placeholder="Book Name ..." class="window_Book_search"  style="font-size:50px" onkeyup="searchBook()">
-      </div> 
         <div id="app" class="App" href="css_styles.css">
-            <div id="users">
-                <h2> Users </h2>
-                <div id="users_menu" style="overflow-x: auto; white-space:nowrap; border-style: solid;">
+            <div id="users" class="container">
+                <div class="main--search">
+                    <label> Users </label>
+                    <input type="text" placeholder="User Name ..." class="window_User_search" style="font-size:50px"
+                        onkeyup="searchUser()">
+                </div>
+                <div id="users_menu">
+                </div>
             </div>
-        </div>
-        <div id="companies">
-            <h2> Companies </h2>
-            <div id="companies_menu" style="overflow-x: auto; white-space:nowrap; border-style: solid;">
-        </div>
-        <div id="books">
-            <h2> Books </h2>
-            <div id="books_menu" style="overflow-x: auto; white-space:nowrap; border-style: solid;">    
-        </div>
-    </main>        
+
+            <div id="companies" class="container">
+                <div class="main--search">
+                    <label> Companies </label>
+                    <input type="text" placeholder="Company Name ..." class="window_Company_search" style="font-size:50px"
+                        onkeyup="searchCompany()">
+                </div>
+                <div id="companies_menu" class="">
+                </div>
+            </div>
+                <div id="books"class="container">
+                    <div class="main--search">
+                    <label> Books </label>
+                    <input type="text" placeholder="Book Name ..." class="window_Book_search" style="font-size:50px"
+                    onkeyup="searchCompany()">
+                </div>
+                    <div id="books_menu" >
+                 </div>
+                </div>
+    </main>
 </body>
 <!-- <script src="..\assets\script\loaderapi.js"></script> -->
 <script src="..\assets\script\loaderapionline.js"></script>
+
 </html>
+
+
+  <div class="infocardContainer">
+    <div class="main">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Dog_coat_variation.png"></img>
+    </div>
+    <div class="textbois">
+      <h2>Emil Alicic</h2>
+      <h4>Professional Memeologist</h4>
+      <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a>    
+    </div>
+  </div>
